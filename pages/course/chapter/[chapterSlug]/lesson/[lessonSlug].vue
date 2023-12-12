@@ -62,11 +62,7 @@ const isLessonComplete = computed(() => {
     return false;
   }
 
-  if (
-    !progress.value[chapter.value.number - 1][
-      lesson.value.number - 1
-    ]
-  ) {
+  if (!progress.value[chapter.value.number - 1][lesson.value.number - 1]) {
     return false;
   }
 
